@@ -52,7 +52,7 @@ class Files {
     }
 
     // Write to file
-    private void write(){
+    private void write() {
         try {
             FileWriter myWriter = new FileWriter(PATH);
             myWriter.write("Some random text!");
@@ -65,7 +65,7 @@ class Files {
     }
 
     // Read file
-    private void read(){
+    private void read() {
         try {
             File myObj = new File(PATH);
             Scanner myReader = new Scanner(myObj);
@@ -80,7 +80,7 @@ class Files {
         }
     }
 
-    private void fileInfo(){
+    private void fileInfo() {
         File myObj = new File(PATH);
         if (myObj.exists()) {
             System.out.println("File name: " + myObj.getName());
@@ -94,7 +94,7 @@ class Files {
     }
 
     // Delete the file
-    private void delete(){
+    private void delete() {
         File myObj = new File(PATH);
         if (myObj.delete()) {
             System.out.println("Deleted the file: " + myObj.getName());

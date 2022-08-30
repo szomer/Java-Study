@@ -30,7 +30,6 @@ class StringManipulation {
         String firstName = "John";
         String lastName = "Doe";
         firstName.concat(lastName);
-
     }
 
     private void specialCharacters() {
@@ -44,7 +43,6 @@ class StringManipulation {
 
         // Backslash  -> "
         txt = "The character \\ is called backslash.";
-
     }
 
     private void escapeSequences() {
@@ -65,5 +63,4 @@ class StringManipulation {
         // Form Feed
         txt = "Line one.\fLine two";
     }
-
 }
