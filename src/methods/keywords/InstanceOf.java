@@ -1,4 +1,4 @@
-package components.keywords;
+package methods.keywords;
 
 class InstanceOf {
 

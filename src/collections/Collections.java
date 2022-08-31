@@ -1,10 +1,14 @@
 package collections;
 
+import java.util.*;
+
 class Collections {
     public static void main(String[] args){
         Collections x = new Collections();
         x.arrays();
         x.collections();
+        x.collectionsExample();
+        x.mapExamples();
     }
 
     // Collection:          is any data structure that can hold zero or more data items. Generally, the data
@@ -31,19 +35,60 @@ class Collections {
     }
 
     private void collections() {
-        // Interfaces
-        //      [1] Set
-        //      [2] List
-        //      [3] Queue
-        //      [4] Deque
+        // COLLECTION FRAMEWORK:
 
-        // Classes
-        //      [1] ArrayList
-        //      [2] Vector
-        //      [3] LinkedList
-        //      [4] PriorityQueue
-        //      [5] HashSet
-        //      [6] LinkedHashSet
-        //      [7] TreeSet
+        // COLLECTION
+            // Interfaces
+            //      [1] Set
+            //      [2] List
+            //      [3] Deque
+            //      [4] Queue
+
+            // Classes
+            //      [1] LinkedHashSet
+            //      [2] HashSet
+            //      [3] TreeSet
+            //      [4] ArrayList
+            //      [5] Vector
+            //          <- Stack
+            //      [6] LinkedList
+            //      [7] ArrayDeque
+            //      [8] PriorityQueue
+
+        // MAP
+            // Interfaces
+            //      [1] Map
+
+            // Classes
+            //      [1] AbstractMap
+            //          <- EnumMap
+            //          <- HashMap
+            //      [2] TreeMap
+    }
+
+    private void collectionsExample(){
+        // Set examples
+        Set<String> hs          = new HashSet<>();
+        Set<String> ls          = new LinkedHashSet<>();
+        Set<String> ts          = new TreeSet<>();
+
+        // List examples
+        List<String> al         = new ArrayList<>();
+        List<String> ll         = new LinkedList<>();
+        List<String> v          = new Vector<>();
+        Stack<String> st        = new Stack<>();
+
+        // Deque examples
+        Deque<String> dll       = new LinkedList<>();
+        Deque<String> dad       = new ArrayDeque<>();
+
+        // Queue examples
+        Queue<String> pq        = new PriorityQueue<>();
+    }
+
+    private void mapExamples(){
+        // Map examples
+        Map<String, String> sm  = new HashMap<>();
+        Map<String, String> tm  = new TreeMap<>();
     }
 }

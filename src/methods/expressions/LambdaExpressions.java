@@ -1,4 +1,4 @@
-package components.expressions;
+package methods.expressions;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;

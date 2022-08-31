@@ -1,4 +1,4 @@
-package components;
+package methods;
 
 class Components {
     private int arr[] = new int[10];

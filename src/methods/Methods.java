@@ -1,4 +1,4 @@
-package components;
+package methods;
 
 class Methods {
     public static void main(String[] args){

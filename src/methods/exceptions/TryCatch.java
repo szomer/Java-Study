@@ -1,4 +1,4 @@
-package components.statements;
+package methods.exceptions;
 
 class TryCatch {
 

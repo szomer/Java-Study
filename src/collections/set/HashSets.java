@@ -1,6 +1,8 @@
-package collections.hashset;
+package collections.set;
 
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 class HashSets {
 
@@ -14,6 +16,7 @@ class HashSets {
         x.loop();
         x.delete();
         x.deleteAll();
+        x.iterator();
     }
 
     private void create(){
@@ -53,5 +56,32 @@ class HashSets {
     private void deleteAll(){
         // Delete all items from the HashSet
         cars.clear();
+    }
+
+    private void iterator(){
+        // Hash Set
+        Set<String> countries = new HashSet<>();
+
+        countries.add("India");
+        countries.add("Australia");
+        countries.add("South Africa");
+
+        // Adding the duplicate element
+        countries.add("India");
+
+        // Print the set
+        System.out.println("\nHash Set: " + countries);
+
+        // Remove item from HashSet
+        countries.remove("Australia");
+        System.out.println("Hash Set after removing Australia: " + countries);
+
+        // Create iterator of set
+        Iterator<String> it = countries.iterator();
+
+        System.out.println("Iterating Hash Set:");
+        while(it.hasNext()){
+            System.out.println("\t" + it.next());
+        }
     }
 }

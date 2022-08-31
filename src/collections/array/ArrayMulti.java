@@ -1,15 +1,15 @@
-package collections.array_multidementional;
+package collections.array;
 
-class MultidimensionalArrays {
+class ArrayMulti {
 
     public static void main(String[] args){
-        MultidimensionalArrays x = new MultidimensionalArrays();
-        x.CreateArray();
-        x.ManipulateArray();
-        x.LoopArray();
+        ArrayMulti x = new ArrayMulti();
+        x.createArray();
+        x.manipulateArray();
+        x.loopArray();
     }
 
-    private void CreateArray() {
+    private void createArray() {
         // Create arrays
         int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
         int x = myNumbers[1][2];
@@ -17,13 +17,13 @@ class MultidimensionalArrays {
 
     }
 
-    private void ManipulateArray() {
+    private void manipulateArray() {
         // Change the value of an element
         int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
         myNumbers[1][2] = 2;
     }
 
-    private void LoopArray(){
+    private void loopArray(){
         int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
 
         for (int i = 0; i < myNumbers.length; ++i) {
